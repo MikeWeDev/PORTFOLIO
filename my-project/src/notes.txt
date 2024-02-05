@@ -1,0 +1,198 @@
+ <div className=" flex bg-[#f5fafd] w-[100vw] h-[100vh] align-center">
+   
+    <div className="image-container flex-1 h-[100vh] w-[100vw]">
+     <img src="images/black-friday-sale-decoration-background-with-shopping-trolley-copy-space_257995-187.webp" alt=""
+      className="h-[500px] w-[100vw] mt-2"/>   
+     </div>
+     <div className="info-container flex-1 p-[28px] mt-10">
+       <h1 className="text-[50px]">
+         SAMMER SAL
+       </h1>
+       <p className="my-[50px] text-[19px] font-blod">  
+       DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW 
+       ARRIVAL
+       </p>
+       <button className="border p-3 border-black">
+         Shop Now
+       </button>
+     </div>
+     </div>
+
+
+
+      <div className="  flex  w-[100vw] h-[100vh] align-center">
+       <div className="image-container flex-1 h-[100vh] w-[100vw]">
+        <img src="images/black-friday-sale-decoration-background-with-shopping-trolley-copy-space_257995-187.webp" alt=""
+         className="h-[500px] w-[100vw] mt-2"/>   
+        </div>
+        <div className="info-container flex-1 p-[28px] mt-10">
+          <h1 className="text-[50px]">
+           POPULAR SAL
+          </h1>
+          <p className="my-[50px] text-[19px] font-blod">  
+          DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW 
+          ARRIVAL
+          </p>
+          <button className="border p-3 border-black">
+            Shop Now
+          </button>
+        </div>
+        </div>
+
+
+setInterval(()=>{
+      if(currentIndex === 0){
+        setCurrentIndex(data.length - 1)
+       }
+       else{
+        setCurrentIndex(currentIndex -1)
+       }
+    },3000)
+        
+
+      <div className="  flex  w-[100vw] h-[100vh] align-center">
+   <div className="image-container flex-1 h-[100vh] w-[100vw]">
+    <img src="images/black-friday-sale-decoration-background-with-shopping-trolley-copy-space_257995-187.webp" alt=""
+     className="h-[500px] w-[100vw] mt-2"/>   
+    </div>
+    <div className="info-container flex-1 p-[28px] mt-10">
+      <h1 className="text-[50px]">
+        WINTER SAL
+      </h1>
+      <p className="my-[50px] text-[19px] font-blod">  
+      DONT CONPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW 
+      ARRIVAL
+      </p>
+      <button className="border p-3 border-black">
+        Shop Now
+      </button> 
+    </div>
+   </div>
+
+   const catagories = [
+    {
+      img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+      title: "Nike Air Monarch IV",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "200",
+      company: "Nike",
+      color: "white",
+      category: "sneakers",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+      title: "Nike Air Vapormax Plus",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "200",
+      company: "Nike",
+      color: "red",
+      category: "sneakers",
+    },
+  
+    {
+      img: "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+      title: "Nike Waffle One Sneaker",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "200",
+      company: "Nike",
+      color: "green",
+      category: "sneakers",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg",
+      title: "Nike Running Shoe",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "200",
+      company: "Adidas",
+      color: "black",
+      category: "sneakers",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
+      title: "Flat Slip On Pumps",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "200",
+      company: "Vans",
+      color: "green",
+      category: "flats",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg",
+      title: "Knit Ballet Flat",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "50",
+      company: "Adidas",
+      color: "black",
+      category: "flats",
+    },
+  
+    {
+      img: "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg",
+      title: "Loafer Flats",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "50",
+      company: "Vans",
+      color: "white",
+      category: "flats",
+    },
+  
+    {
+      img: "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg",
+      title: "Nike Zoom Freak",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "200",
+      company: "Nike",
+      color: "green",
+      category: "sneakers",
+    },
+  
+    {
+      img: "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg",
+      title: "Nike Men's Sneaker",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "200",
+      company: "Adidas",
+      color: "blue",
+      category: "sneakers",
+    },
+  
+    {
+      img: "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
+      title: "PUMA BLACK-OCE",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "150",
+      company: "Puma",
+      color: "green",
+      category: "sneakers",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg",
+      title: "Pacer Future Sneaker",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "150",
+      company: "Puma",
+      color: "red",
+      category: "sneakers",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
+      title: "Unisex-Adult Super",
+      reviews: "(123 reviews)",
+      prevPrice: "$140,00",
+      newPrice: "150",
+      company: "Puma",
+      color: "black",
+      category: "sneakers",
+    },
+  ];
