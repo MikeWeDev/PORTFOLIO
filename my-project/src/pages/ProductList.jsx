@@ -1,4 +1,3 @@
-import NavBar from '../component/NavBar'
 import Announsment from '../component/Announsment'
 import Product from '../component/Product'
 import NewsLetter from '../component/NewsLetter'
@@ -6,7 +5,6 @@ import Fotter from '../component/Fotter'
 function ProductList() {
   return (
     <div>
-       <NavBar />
        <Announsment />
         <h1 className='m-5 font-bold text-[40px]'>Dresses</h1>
         <div className="fiter-container flex justify-between items-center">

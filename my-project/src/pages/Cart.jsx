@@ -1,10 +1,8 @@
-import NavBar from '../component/NavBar'
 import Announsment from '../component/Announsment'
 import Fotter from '../component/Fotter'
 function Cart() {
   return (
     <div className=" ">
-      <NavBar />
       <Announsment />
       <div className="wrapper pb-40">
        <h1 className='text-1xl p-8 font-bold text-center sm:text-4xl'>Your Bag</h1>

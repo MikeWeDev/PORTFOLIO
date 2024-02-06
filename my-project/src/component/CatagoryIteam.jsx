@@ -1,4 +1,6 @@
+import {Link} from "react-router-dom"
 function CatagoryIteam() {
+
     return (
        <div className="flex flex-wrap justify-around align-center gap-4">
   {catagories.map((iteam)=>(
@@ -16,7 +18,7 @@ function CatagoryIteam() {
                 </h1>
                 <button className="border text-center align-center w-[100%] bg-white text-gray-600 font-bold 
                 sm:p-2">
-                  Shop Now
+                 <Link to="/c">Shop Now</Link>
                 </button>
               </div>
 

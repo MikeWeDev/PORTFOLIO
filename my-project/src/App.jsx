@@ -6,11 +6,13 @@ import ProductList from './pages/ProductList'
 import Rigister from './pages/Rigister'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
+import NavBar from './component/NavBar'
 function App() {
 
   return (
    <>
     <Router>
+      <NavBar />
       <Routes>
        <Route index path='/' element={<Home  /> } />
         <Route  path='/c' element={<Cart />} />

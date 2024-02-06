@@ -1,4 +1,3 @@
-import NavBar from '../component/NavBar'
 import Announsment from '../component/Announsment'
 import Slider from '../component/Slider'
 import Catagory from '../component/Catagory'
@@ -9,7 +8,6 @@ function Home() {
   return (
     <>
        <Announsment />
-       <NavBar />
       <Slider />
       <Catagory />
       <Product />

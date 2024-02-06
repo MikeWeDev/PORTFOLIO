@@ -1,4 +1,3 @@
-import NavBar from '../component/NavBar'
 import Announsment from '../component/Announsment'
 import NewsLetter from '../component/NewsLetter'
 import Fotter from '../component/Fotter'
@@ -6,7 +5,6 @@ import Fotter from '../component/Fotter'
 function Product(){
     return(
         <div className="">
-    <NavBar />
     <Announsment />
       <div className="wrapper flex jsutify-between flex-col sm:flex-row">
         <div className="img-con flex-1">

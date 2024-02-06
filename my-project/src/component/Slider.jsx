@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import {Link} from "react-router-dom"
 
 function Slider() {
   const [currentIndex,setCurrentIndex]=useState(0)
@@ -49,7 +49,7 @@ function Slider() {
            {iteam.desc}
             </p>
             <button className="border p-3  border-black">
-              Shop Now
+             <Link to="/p">Shop Now</Link> 
             </button>
           </div>
           </div>
