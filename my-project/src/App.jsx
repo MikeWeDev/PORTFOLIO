@@ -1,16 +1,11 @@
 import './index.css'
-import Home from './Home'
-import { BrowserRouter as Router, Routes ,Route } from "react-router-dom"
-
+import NavBar from './Components/NavBar'
+import Fotter from  './Components/Fotter'
 function App() {
   return (
    <>
-   <Router>
-      <Routes>
-       <Route index path='/' element={<Home  /> } />
-       
-      </Routes>
-    </Router>
+   <NavBar />
+   <Fotter />
    </>
   
   )
