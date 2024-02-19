@@ -1,14 +1,12 @@
-import './index.css'
-import NavBar from './Components/NavBar'
-import Fotter from  './Components/Fotter'
+import './index.scss'
 function App() {
   return (
    <>
-   <NavBar />
-   <Fotter />
+   hey there
    </>
   
   )
 }
 
 export default App
+ 
