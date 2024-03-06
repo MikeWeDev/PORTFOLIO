@@ -1,0 +1,183 @@
+import "./index.scss"
+import LogoS from '../../assets copy/images/logo-s.png'
+import {Link} from 'react-router-dom'
+function Home() {
+  return (
+    <div className="container home-page">
+     <div className="text-zone">
+        <h1>hi <br />I'm
+        <img src={LogoS} alt="" />
+        Negash
+        <br />
+        WEB DEVELOPER
+        </h1>
+        <h2>
+            Frontend React Developer
+          <Link className='flat-button' to="/contact">
+            Contact
+          </Link>
+        </h2>
+     </div>
+    </div>
+  )
+}
+
+export default Home
+
+
+
+   <div className="liquid-shape">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" 
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="80%" id="blobSvg">
+         <path fill="#ffd700">
+                    <animate attributeName="d"
+                    dur="30000ms"
+                    repeatCount="indefinite"
+
+                    values="
+ M409,316Q356,382,282,407Q208,432,143,382.5Q78,333,80.5,
+251.5Q83,170,144,112.5Q205,55,286.5,78.5Q368,102,415,176Q462,250,409,316Z; 
+                    
+
+M390.5,292Q380,334,366.5,405Q353,476,284,483Q215,490,152.5,462Q90,434,
+81.5,368Q73,302,85.5,253.5Q98,205,111,155Q124,105,173.5,83.5Q223,
+ 62,275,71.5Q327,81,369,113.5Q411,146,406,198Q401,250,390.5,292Z;
+ 
+ M399.5,335Q386,420,290.5,455.5Q195,491,129.5,415Q64,339,85,260Q106,
+ 181,157,123.5Q208,66,306,61.5Q404,57,408.5,153.5Q413,250,399.5,335Z;
+ 
+ M402.5,325.5Q370,401,287,426.5Q204,452,156,385Q108,318,108.5,250Q109,
+ 182,152,94.5Q195,7,294.5,38.5Q394,70,414.5,160Q435,250,402.5,325.5Z;
+
+ M409.5,326Q371,402,286,434.5Q201,467,118.5,410Q36,353,68.5,265.5Q101,
+ 178,152,111Q203,44,292.5,64.5Q382,85,415,167.5Q448,250,409.5,326Z;
+
+ M410,310.5Q347,371,272.5,423.5Q198,476,126,410Q54,344,41,243.5Q28,
+ 143,112.5,80Q197,17,293,46.5Q389,76,431,163Q473,250,410,310.5Z;
+
+ M394,321Q363,392,289,398Q215,404,137.5,373Q60,342,67.5,254Q75,166,
+ 141,113.5Q207,61,302.5,62.5Q398,64,411.5,157Q425,250,394,321Z;
+ 
+ M422.5,328Q374,406,285.5,443.5Q197,481,115.5,417.5Q34,354,48.5,257Q63,
+ 160,135.5,113Q208,66,290.5,81Q373,96,422,173Q471,250,422.5,328Z;
+
+ M439,332Q381,414,290.5,441Q200,468,150,395Q100,322,98,249Q96,176,146,
+ 94.5Q196,13,292,45Q388,77,442.5,163.5Q497,250,439,332Z;
+
+ M418,338Q391,426,300.5,426.5Q210,427,162,371Q114,315,79,233Q44,151,119.5,
+ 79.5Q195,8,289.5,45Q384,82,414.5,166Q445,250,418,338Z;
+
+
+ M409,316Q356,382,282,407Q208,432,143,382.5Q78,333,80.5,251.5Q83,
+ 170,144,112.5Q205,55,286.5,78.5Q368,102,415,176Q462,250,409,316Z;  
+ 
+ " ></animate>
+                </path>
+            </svg>
+        </div> 
+
+
+
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }
+  .home-page {
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40%;
+      max-height: 90%;
+    }
+  
+    h1 {
+      color: #fff;
+      font-size: 56px;
+      line-height: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+  
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -50px;
+        left: -15px;
+        opacity: 0.6;
+      }
+  
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+  
+      img{
+        margin-left: 20px;
+        opacity: 0;
+        width: 32px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+      }
+    }
+  
+    h2 {
+      color: #8d8d8d;
+      margin-top:20px;
+      font-weight: 800;
+      font-size: 16px;
+      font-family: sans-serif;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+    }
+  
+    .flat-button {
+      color: #ffd700;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #ffd700;
+      margin-top: 25px;
+      float: left;
+      animation: fadeInAnimation 1s 1.8s backwards;
+      white-space: nowrap;
+  
+      &:hover {
+        background: #ffd700;
+        color: #333;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
