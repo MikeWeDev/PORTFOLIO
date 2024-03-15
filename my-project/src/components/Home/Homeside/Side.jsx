@@ -3,7 +3,7 @@ function Side() {
   return (
     <div className="containerS">
       <div className="img">
-      <img src="/BackgroundEraser_20231006_210113817.png" alt="" />
+      <img src="BackgroundEraser_20231006_210113817.png" alt="" />
 
       </div>
     </div>
@@ -11,3 +11,4 @@ function Side() {
 }
 
 export default Side
+

@@ -1,13 +1,26 @@
 import './index.scss'
 import {useRef} from 'react'
 import emailjs from "@emailjs/browser"
+import {faPhone} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+
+
 
 function Contact() {
+  const phoneNumber='0902464535'
+  const handleDial =()=>{
+    window.location.href=`tel:${phoneNumber}`
+  }
+
+
+
     const letters=['C','O','N','T','A','C','T',` `,'M','E'  ]
     const form = useRef();
 
     const sendEmail = (e) => {
       e.preventDefault();
+     
+
   
       emailjs
         .sendForm('service_uk7hzdl', 'template_0fnzi45', form.current, {
@@ -15,23 +28,25 @@ function Contact() {
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            alert(`SUCCESSFULLY SENT!`);
+            form.current.reset();
           },
           (error) => {
-            console.log('FAILED...', error.text);
+            alert('FAILED...', error.text);
           },
         );
     };
     return (
-    <div className='container contact-page'>
+    <div className='containerC flex justify-between contact-page'>
+         
         <div className="text-zone">
-            <h1>
+            <h1 className='h1'>
                 {letters.map((i,index)=>{
              return  <span  key={index} className="father">{i}</span>
                })}
             </h1>
             <p>
-         IF YOU WANT TO TALK TO ME . <br></br>
+         IF YOU WANT TO TALK TO ME . 
          I WOUILD BE HAPPY TO HEAR FROM YOU!
             </p>
            
@@ -46,18 +61,22 @@ function Contact() {
               required />
                </li>
                <li>
-               <textarea name="message" />
-      <input type="submit" value="Send" />
+               <textarea name="message" placeholder='Message'/>
+      <input type="submit" value="Send"  className='flat '/>
                </li>
-               <li  className='flat'>
-                <button type='submit'>Send</button>
-               </li>
+                
+        <li className='call'>
+          <a href={`tel:${phoneNumber}`} className='phone' onClick={handleDial}>
+      <FontAwesomeIcon className='anchor' icon={faPhone} color='#4d4d4e' />
+          </a>
+        </li>
+       
+              
             </ul>
           </form>
           </div>
         </div>
-       
-   
+      
     </div>
   )
 }

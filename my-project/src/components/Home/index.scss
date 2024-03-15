@@ -2,7 +2,6 @@
     width: 100%;
     will-change: contents;
     height: 90%;
-    min-height: 566px;
     position: absolute;
     opacity: 0;
     top: 5%;
@@ -59,7 +58,7 @@
         color: #ffd700;
         font-size: 18px;
         position: absolute;
-        margin-top: 18px;
+        margin-top: 22px;
         margin-left: 20px;
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.6;
@@ -121,3 +120,39 @@
       }
     }
   }
+  @media screen and (max-width: 760px) {
+    .tags,
+    .home-page h1:before,
+    .home-page h1:after {
+      display: none;
+    }
+  
+    .home-page .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+  }
+@media screen and (max-width: 330px) {
+  .text-zone {
+    width: 20%;
+    max-height: 50%;
+  h1 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+  }
+}
+h2 {
+  color: #8d8d8d;
+  margin-top:20px;
+  font-weight: 800;
+  font-size: 12px;
+  }
+}

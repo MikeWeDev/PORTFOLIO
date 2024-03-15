@@ -1,17 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faTypo3, faWebflow } from '@fortawesome/free-brands-svg-icons'
+import {  faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faTypo3, faWebflow } from '@fortawesome/free-brands-svg-icons'
 import { faTabletAlt } from '@fortawesome/free-solid-svg-icons'
 function About() {
     const letter=['A','B','O','U','T',`  `,'M','E']
 
   return (
     <>
-      <div className="container about-page">
+      <div className="containerA about-page">
       <div className="text-zone">
         <h1>
-    {letter.map((i)=>{
-        return <span className='father'>{i}</span>
+    {letter.map((i,index)=>{
+        return <span key={index} className='father'>{i}</span>
     })}
         </h1>
        
@@ -73,3 +73,7 @@ function About() {
 }
 
 export default About
+
+
+
+

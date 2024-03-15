@@ -92,7 +92,7 @@
     margin-left:0;
     position: absolute;
     right:0;
-    top:30%;
+    top:40%;
 }
 .cube-spiner{
       animation-name:spincube;
@@ -167,4 +167,57 @@
     }
     
 }
+  }
+  @media(max-width:720px) {
+    .containerA {
+      min-height: 1000px;
+      top: -10%;
+      z-index: 1;
+     
+    }
+    .about-page{
+
+      .text-zone{
+          position: absolute;
+          left:10%;
+          top:25%;
+          transform:translateY(-50%);
+          width:80%;
+          vertical-align: middle;
+          display:table-cell;
+          max-height:90%;
+  
+          h1{
+              font-size:43px;
+              font-family:'Coolvetica';
+              color:#ffd700;
+              font-weight: 400;
+              margin-top: 0;
+              position: relative;
+              margin-bottom:10px;
+              left:10%;
+            &::before{
+             display: none;
+  
+            }
+            &::after{
+              display: none;
+            }
+  
+          }
+         
+      }
+  .stage-cube-cont{
+      width:80%;
+      height:100%;
+      padding-top:0px;
+      margin-top:0;
+      position: absolute;
+      right:10%;
+      top:52%;
+  
+  }
+  
+  
+    }
   }
